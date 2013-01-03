@@ -8,8 +8,9 @@ def process_command(request, cmd):
     # Map these directly to --<string> with no interference. Ex: on should map to --on
     direct_map = ['on', 'off', 'red', 'blue', 'green']
 
-    if cmd == 'on':
-        params.append('--on')
+    if cmd == 'random' and 'numtimes' in request.GET:
+        params.append('--random')
+        params.append(request.GET['numtimes'])
     elif cmd in direct_map:
         params.append('--' + cmd)
     else:
