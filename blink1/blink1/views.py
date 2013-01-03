@@ -11,6 +11,9 @@ def process_command(request, cmd):
     if cmd == 'random' and 'numtimes' in request.GET:
         params.append('--random')
         params.append(request.GET['numtimes'])
+    elif cmd == 'rgb' and 'r' in request.GET and 'g' in request.GET and 'b' in request.GET:
+        params.append('--rgb')
+        params.append(request.GET['r']+ ',' + request.GET['g'] + ',' + request.GET['b'])
     elif cmd in direct_map:
         params.append('--' + cmd)
     else:
