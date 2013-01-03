@@ -519,6 +519,22 @@
 		"selected_items":
 		[
 			[
+				"rope",
+				"Rope: Import Assist"
+			],
+			[
+				"rope: new ",
+				"Rope: New Project"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
 				"push",
 				"Git: Push"
 			],
@@ -587,10 +603,6 @@
 				"Package Control: List Packages"
 			],
 			[
-				"enable",
-				"Package Control: Enable Package"
-			],
-			[
 				"disable",
 				"Package Control: Disable Package"
 			],
@@ -651,7 +663,7 @@
 				"Indentation: Reindent Lines"
 			]
 		],
-		"width": 449.0
+		"width": 448.0
 	},
 	"console":
 	{
@@ -668,6 +680,10 @@
 	},
 	"file_history":
 	[
+		"/Users/Matthew/Documents/python/blink1/blink1/blink1/urls.py",
+		"/Users/Matthew/Documents/python/blink1/blink1/blink1/views.py",
+		"/Users/Matthew/.ssh/config",
+		"/Users/Matthew/Documents/python/blink1/.ropeproject/config.py",
 		"/Users/Matthew/Documents/python/blink1/blink1/blink1/settings.py",
 		"/Users/Matthew/Documents/python/blink1/blink1/manage.py",
 		"/Users/Matthew/.bashrc",
@@ -690,7 +706,6 @@
 		"/Users/Matthew/Documents/python/google-python-exercises/basic/string1.py",
 		"/Users/Matthew/Library/Application Support/Sublime Text 2/Packages/Python/Python.sublime-build",
 		"/Users/Matthew/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Users/Matthew/.ssh/config",
 		"/private/var/folders/bj/__19q1q53qs6gq4pntp7bbhc0000gn/T/17721bea-1433-4e33-9fec-a48d40fd7e15/home/mdierker/mdev.my.eatcumtd.com/js/Widget.js",
 		"/private/var/folders/bj/__19q1q53qs6gq4pntp7bbhc0000gn/T/17721bea-1433-4e33-9fec-a48d40fd7e15/home/mdierker/mdev.my.eatcumtd.com/js/widgets/laundry/laundry.html",
 		"/private/var/folders/bj/__19q1q53qs6gq4pntp7bbhc0000gn/T/17721bea-1433-4e33-9fec-a48d40fd7e15/home/mdierker/mdev.my.eatcumtd.com/php/db/getuserswidgets.php",
@@ -792,10 +807,7 @@
 		"/private/var/folders/bj/__19q1q53qs6gq4pntp7bbhc0000gn/T/17721bea-1433-4e33-9fec-a48d40fd7e15/home/mdierker/partyrockillinois.com/wp-content/plugins/facebook-comments-for-wordpress/facebook-comments-ajax.php",
 		"/private/var/folders/bj/__19q1q53qs6gq4pntp7bbhc0000gn/T/17721bea-1433-4e33-9fec-a48d40fd7e15/home/mdierker/partyrockillinois.com/wp-content/plugins/facebook-comments-for-wordpress/facebook-comments-admin.php",
 		"/Users/Matthew/Documents/School/CS 373/HW3.tex",
-		"/private/var/folders/bj/__19q1q53qs6gq4pntp7bbhc0000gn/T/17721bea-1433-4e33-9fec-a48d40fd7e15/home/mdierker/mdev.my.eatcumtd.com/phpinfo.php",
-		"/Users/Matthew/Downloads/automod-1.0.1/docs/INSTALL",
-		"/Users/Matthew/Downloads/automod-1.0.1/README.md",
-		"/Users/Matthew/Downloads/keycaptcha_2_0_1 2/modx.prosilver.en.xsl"
+		"/private/var/folders/bj/__19q1q53qs6gq4pntp7bbhc0000gn/T/17721bea-1433-4e33-9fec-a48d40fd7e15/home/mdierker/mdev.my.eatcumtd.com/phpinfo.php"
 	],
 	"find":
 	{
@@ -814,6 +826,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Http",
 			"not",
 			"/keyser/24727",
 			"http://code.google.com/keyser/24727",
@@ -940,8 +953,7 @@
 			"printf",
 			"R 1",
 			"nways",
-			"o",
-			"tag"
+			"o"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1237,7 +1249,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true
 }
