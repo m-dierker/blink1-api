@@ -7,7 +7,7 @@ class BlinkFader(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
         self.blink = Blink()
-        self.blink.off()
+        self.blink.rgb(0,0,0,1)
         self.daemon = True
         self.queue = Queue.Queue()
         self.history = []
@@ -18,12 +18,12 @@ class BlinkFader(threading.Thread):
             while not self.queue.empty():
                 (r,g,b) = self.queue.get()
 
-                self.blink.rgb(r,g,b, 1500)
+                self.blink.rgb(r,g,b, 1000)
                 self.history.append((r,g,b))
-                sleep(3.5)
+                sleep(6)
 
-                self.blink.rgb(0, 0, 0, 1000)
-                sleep(2.5)
+                # self.blink.rgb(0, 0, 0, 1000)
+                # sleep(2.5)
 
             self.addHistoryToQueue()
 
@@ -38,6 +38,8 @@ class BlinkFader(threading.Thread):
     def clear(self):
         while not self.queue.empty():
             self.queue.get()
+        del self.history[0:len(self.history)]
+        self.blink.off()
 
     def kill(self):
         self.killed = True
@@ -48,9 +50,14 @@ def main():
     x.start()
     x.add(255,0,0)
     x.add(0,0,255)
-    sleep(20)
+    sleep(10)
     print 'adding green'
     x.add(0, 255, 0)
+    sleep(10)
+    print('clearing')
+    x.clear()
+    sleep(5)
+    x.add(0,255,255)
     while True:
         sleep(10)
 

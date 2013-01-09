@@ -1,5 +1,6 @@
 import subprocess
 import Settings
+import os
 
 
 class Blink:
@@ -35,7 +36,11 @@ class Blink:
 
 
     def cmd(self, cmd):
-        code = subprocess.call([Settings.BLINK1_TOOL + ' ' + cmd])
+        command = [Settings.BLINK1_TOOL]
+        command.extend(cmd.split(" "))
+        nul = open(os.devnull, "w")
+        code = subprocess.call(command, stdout=nul)
+        nul.close()
         return code
 
 
