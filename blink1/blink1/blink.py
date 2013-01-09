@@ -43,29 +43,9 @@ class Blink:
     def __init__(self):
         pass
 
+
 def getInt(i):
-        if not isinstance(i, int):
-            return int(i)
-        return i
-
-def main():
-    x = Blink()
-    for i in range(0, 16):
-        r = 0
-        g = 0
-        b = 0
-        if i in range (0, 2):
-            r = 255
-        elif i in range (4, 6):
-            g = 255
-        elif i in range (8, 10):
-            b = 255
-        elif i in range (12, 14):
-            r = 255
-            b = 255
-        x.saveRGB(r, g, b, i)
-    print 'rgb saved'
-
-
-if __name__ == '__main__':
-    main()
+    """ Will try to return an int from a string or int """
+    if not isinstance(i, int):
+        return int(i)
+    return i
