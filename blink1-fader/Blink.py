@@ -35,7 +35,7 @@ class Blink:
 
 
     def cmd(self, cmd):
-        code = subprocess.call([Settings.BLINK1_TOOL + ' ' + cmd], shell=True)
+        code = subprocess.call([Settings.BLINK1_TOOL + ' ' + cmd])
         return code
 
 
